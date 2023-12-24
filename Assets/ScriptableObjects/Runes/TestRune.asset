@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7959464409387560310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfce83ffec5b7b14a85ec10ce4e193ab, type: 3}
+  m_Name: ZipStep
+  m_EditorClassIdentifier: 
+  Position: {x: 336, y: 386}
+  Guid: cc7813f0-37d2-44d5-8409-72ef640e47fa
+  _in:
+    Nodes:
+    - {fileID: 3470929320567701890}
+    - {fileID: 6806886774387728050}
+  Operator:
+    rid: 2346208790267035649
+  references:
+    version: 2
+    RefIds:
+    - rid: 2346208790267035649
+      type: {class: Average, ns: TagFighter.Effects.Operators, asm: Assembly-CSharp}
+--- !u!114 &-7310262609116166999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844f2211c024f444f876e89a2321a495, type: 3}
+  m_Name: PawnSetterStep
+  m_EditorClassIdentifier: 
+  Position: {x: 677, y: 380}
+  Guid: 92f81450-a6df-4e4d-912d-de9cedc42ad1
+  _in:
+    Node: {fileID: 8736044092964998325}
+  Resource:
+    typeId: 30a0ddc8-3fcf-496a-b578-81dbf333c7ec
+--- !u!114 &-5841318192641428412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c37fc06b3d0ad45b6305eb93d68542, type: 3}
+  m_Name: ContextGetterStep
+  m_EditorClassIdentifier: 
+  Position: {x: 229, y: 380}
+  Guid: 938c11fc-01ec-42e1-9011-b345df3cb2cf
+  Resource:
+    typeId: da13f1c1-4359-4eb9-b969-7db50afe6423
+  Register:
+    typeId: 47eae1ff-9ff5-41fd-b08e-0f674b3848e6
+--- !u!114 &-4619482893835212189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95498ab7ed723494fb6b3c000a0f1c35, type: 3}
+  m_Name: ContextSetterStep
+  m_EditorClassIdentifier: 
+  Position: {x: 674, y: 386}
+  Guid: dec38d9a-6558-4198-8cf5-88d7803084f4
+  _in:
+    Node: {fileID: -1307332316521653590}
+  Resource:
+    typeId: da13f1c1-4359-4eb9-b969-7db50afe6423
+  Register:
+    typeId: 47eae1ff-9ff5-41fd-b08e-0f674b3848e6
+--- !u!114 &-3229689855982809186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4585b32f67d50794cad3c057a0f091a1, type: 3}
+  m_Name: 270aa0c6-4d02-473f-9070-b95a78891ce1
+  m_EditorClassIdentifier: 
+  Guid: 270aa0c6-4d02-473f-9070-b95a78891ce1
+  _nodes:
+  - {fileID: -1327748367674765543}
+  - {fileID: -5841318192641428412}
+  - {fileID: 8736044092964998325}
+  - {fileID: -7310262609116166999}
+--- !u!114 &-1327748367674765543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5625888aa1b3849a0329320febbfa9, type: 3}
+  m_Name: EffectEndNode
+  m_EditorClassIdentifier: 
+  Position: {x: 865.8, y: 380}
+  Guid: 990a7b12-86b0-4294-aafd-6ce87974a50f
+  _in:
+    Node: {fileID: -7310262609116166999}
+--- !u!114 &-1307332316521653590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8070acc07ec7f448050fe3c5cd4278, type: 3}
+  m_Name: FoldStep
+  m_EditorClassIdentifier: 
+  Position: {x: 514, y: 386}
+  Guid: 1f753776-c588-4623-be3a-2ecc8a6d28c7
+  _in:
+    Node: {fileID: -7959464409387560310}
+  Operator:
+    rid: 2346208790267035648
+  references:
+    version: 2
+    RefIds:
+    - rid: 2346208790267035648
+      type: {class: Sum, ns: TagFighter.Effects.Operators, asm: Assembly-CSharp}
+--- !u!114 &-649113059712602876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5625888aa1b3849a0329320febbfa9, type: 3}
+  m_Name: EffectEndNode
+  m_EditorClassIdentifier: 
+  Position: {x: 940, y: 386}
+  Guid: 99b827f7-16c4-49d1-8785-f184a8377804
+  _in:
+    Node: {fileID: -4619482893835212189}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4299eb7af6691f4a82ce6a25fd96981, type: 3}
+  m_Name: TestRune
+  m_EditorClassIdentifier: 
+  RuneSprite: {fileID: 0}
+  Rune:
+    DisplayName: 
+    Speed: 0
+    ManaCost: 0
+    Effects: []
+  RuneEffects:
+  - {fileID: 4043878867747308653}
+  - {fileID: -3229689855982809186}
+  - {fileID: 297526015769030066}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &297526015769030066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4585b32f67d50794cad3c057a0f091a1, type: 3}
+  m_Name: 05601957-5b99-407a-a234-9a7d258103a4
+  m_EditorClassIdentifier: 
+  Guid: 05601957-5b99-407a-a234-9a7d258103a4
+  _nodes: []
+--- !u!114 &3470929320567701890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aba2983d5b304644a37facc1967f5de, type: 3}
+  m_Name: PawnGetterStep
+  m_EditorClassIdentifier: 
+  Position: {x: 115, y: 309}
+  Guid: 81887a16-fba6-48b4-92f4-1df09b3dafb5
+  Resource:
+    typeId: aecc1739-a0df-4013-b430-22d2eb13f0ff
+--- !u!114 &4043878867747308653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4585b32f67d50794cad3c057a0f091a1, type: 3}
+  m_Name: 339c67f6-1e2b-49ab-b35e-77b5f316c9fe
+  m_EditorClassIdentifier: 
+  Guid: 339c67f6-1e2b-49ab-b35e-77b5f316c9fe
+  _nodes:
+  - {fileID: 3470929320567701890}
+  - {fileID: -649113059712602876}
+  - {fileID: -1307332316521653590}
+  - {fileID: -4619482893835212189}
+  - {fileID: -7959464409387560310}
+  - {fileID: 6806886774387728050}
+--- !u!114 &6806886774387728050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aba2983d5b304644a37facc1967f5de, type: 3}
+  m_Name: PawnGetterStep
+  m_EditorClassIdentifier: 
+  Position: {x: 105, y: 473}
+  Guid: ed761976-311d-462d-a7ba-9c67c864a6f7
+  Resource:
+    typeId: da13f1c1-4359-4eb9-b969-7db50afe6423
+--- !u!114 &8736044092964998325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb9a9a2cce40a384084a18925a111186, type: 3}
+  m_Name: RepeatStep
+  m_EditorClassIdentifier: 
+  Position: {x: 509, y: 380}
+  Guid: 69f99b8e-80a9-476c-ba96-3e7718738e0b
+  _in:
+    Node: {fileID: -5841318192641428412}

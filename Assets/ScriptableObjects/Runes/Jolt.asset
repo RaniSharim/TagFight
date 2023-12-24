@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4299eb7af6691f4a82ce6a25fd96981, type: 3}
+  m_Name: Jolt
+  m_EditorClassIdentifier: 
+  RuneSprite: {fileID: 21300000, guid: 9651a3d17f0a1854884cb7af45747c07, type: 3}
+  Rune:
+    DisplayName: Jolt
+    Speed: 1
+    ManaCost: 0
+    Effects:
+    - Mode:
+        rid: 1353921146486259721
+      Effect:
+        rid: 1353921146486259723
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1353921146486259721
+      type: {class: ImmediateEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        _areaOfEffect:
+          rid: 1353921146486259722
+    - rid: 1353921146486259722
+      type: {class: Cone, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}
+      data:
+        Radius:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 10
+        Angle:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 90
+    - rid: 1353921146486259723
+      type: {class: UnaryResourceEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        From:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 0
+        To:
+          Resource:
+            rid: 1353921146486259724
+          Location:
+            rid: 1353921146486259725
+          Multiplier: 1
+          Addend: 10
+    - rid: 1353921146486259724
+      type: {class: RedTag, ns: TagFighter.Effects.ResourceTypeAccessors, asm: Assembly-CSharp}
+    - rid: 1353921146486259725
+      type: {class: Pawn, ns: TagFighter.Effects.ResourceLocationAccessors.Set, asm: Assembly-CSharp}
+      data:
+        Property:
+          rid: 1452634394371555350
+    - rid: 1452634394371555350
+      type: {class: Current, ns: TagFighter.Effects.ResourceLocationAccessors.PawnProperties,
+        asm: Assembly-CSharp}

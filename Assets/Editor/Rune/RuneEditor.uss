@@ -1,0 +1,39 @@
+GridBackground {
+    --grid-background-color: rgb(40, 40, 40);
+    --line-color: rgba(193, 196, 192, 0.1);
+    --thick-line-color: rgba(193, 196, 192, 0.1);
+    --spacing: 15;
+}
+
+RuneEffectView {
+    flex-grow: 1
+}
+
+ScrollView {
+    flex-grow: 1
+}
+
+#runeEffectsControl {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#addRuneEffect {
+    flex-grow: 1
+}
+
+#removeRuneEffect {
+    flex-grow: 1
+}
+
+.GetterStep #title{
+    background-color: #213555;
+}
+
+.SetterStep #title{
+    background-color: #183D3D;
+}
+
+.OperatorStep #title {
+    background-color: #451952;
+}

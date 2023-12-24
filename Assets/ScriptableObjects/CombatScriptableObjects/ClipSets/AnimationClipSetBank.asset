@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12bcb5475855dc544b2d8c3c4764e0c4, type: 3}
+  m_Name: AnimationClipSetBank
+  m_EditorClassIdentifier: 
+  AnimationClipSets:
+  - Weapon: {fileID: 11400000, guid: bc1f4b9ee82b1c5459e1342cd1ce5db6, type: 2}
+    Item: {fileID: 11400000, guid: 962a01205e390ad43bb13e1284cccddd, type: 2}
+    ClipSet: {fileID: 11400000, guid: 03910a172735b054ba1a09399cf54159, type: 2}
+  - Weapon: {fileID: 11400000, guid: 499d5b982e3ec6c46814602eb0491edb, type: 2}
+    Item: {fileID: 11400000, guid: 325236f574d0c574c9a26b15e575f8dd, type: 2}
+    ClipSet: {fileID: 11400000, guid: 1f0332d019522484dac411f6a680aa15, type: 2}

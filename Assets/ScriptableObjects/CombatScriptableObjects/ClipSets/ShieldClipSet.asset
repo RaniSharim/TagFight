@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d0b91f2af5b7f41a4f2d656c3ab3c4, type: 3}
+  m_Name: ShieldClipSet
+  m_EditorClassIdentifier: 
+  idle:
+  - {fileID: -203655887218126122, guid: 7163cc368b6d6ac4789f5f6ebe093eb2, type: 3}
+  - {fileID: -203655887218126122, guid: ae9b2e2ee64369f4db09f954cbdb3ce9, type: 3}
+  - {fileID: -203655887218126122, guid: 35ae2359128829046b651bf0eb5aa22a, type: 3}
+  - {fileID: -203655887218126122, guid: 2b50683f45b1da1438ecb2182d214633, type: 3}
+  run: {fileID: -203655887218126122, guid: 9506436cbefb3e443be6ed65592f3854, type: 3}
+  moveContainers:
+  - combatMove: {fileID: 11400000, guid: 225732b68d142f143a19c2eda1165b67, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 087650105f7968b488cd6ac11161ada8,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: 2e21473c4bb9a7f41a369803cd9f3ccb, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 87ebf56698018fa459f877c0279b4572,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: c9f0ced3b364aa54f9e4092be0a79b74, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 591613409d8345d47b90021884ec3aaa,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: 9a75dd5ffbf363b488d21c5b224d248d, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 76daeb10203554045807ffea1c86b5b0,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: ede6f5fbf89ddd64ba86a41d193c4e55, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: bb20c9daa8f0813498aef0f11f22a088,
+      type: 3}
+    runAnimationOverride: {fileID: 0}

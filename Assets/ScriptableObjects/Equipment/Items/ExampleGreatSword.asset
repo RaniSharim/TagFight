@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be73ecb50c7c89c4b8b04c86bff7eb9b, type: 3}
+  m_Name: ExampleGreatSword
+  m_EditorClassIdentifier: 
+  _effects:
+  - Slot:
+    - {fileID: 11400000, guid: 29dac3f65a9d1fe48af58bbe662ed15b, type: 2}
+    Effect:
+      Mode:
+        rid: 1452634394371555328
+      Effect:
+        rid: 1452634394371555329
+  - Slot:
+    - {fileID: 11400000, guid: 29dac3f65a9d1fe48af58bbe662ed15b, type: 2}
+    Effect:
+      Mode:
+        rid: 2911539951715745793
+      Effect:
+        rid: 2911539951715745794
+  - Slot:
+    - {fileID: 11400000, guid: 29dac3f65a9d1fe48af58bbe662ed15b, type: 2}
+    Effect:
+      Mode:
+        rid: 1452634394371555333
+      Effect:
+        rid: 1452634394371555337
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1452634394371555328
+      type: {class: DelayedEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+    - rid: 1452634394371555329
+      type: {class: UnaryResourceEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        From:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 0
+        To:
+          Resource:
+            rid: 1452634394371555330
+          Location:
+            rid: 1452634394371555331
+          Multiplier: 1
+          Addend: 200
+    - rid: 1452634394371555330
+      type: {class: Range, ns: TagFighter.Effects.ResourceTypeAccessors, asm: Assembly-CSharp}
+    - rid: 1452634394371555331
+      type: {class: Pawn, ns: TagFighter.Effects.ResourceLocationAccessors.Set, asm: Assembly-CSharp}
+      data:
+        Property:
+          rid: 1452634394371555332
+    - rid: 1452634394371555332
+      type: {class: Current, ns: TagFighter.Effects.ResourceLocationAccessors.PawnProperties,
+        asm: Assembly-CSharp}
+    - rid: 1452634394371555333
+      type: {class: PeriodicWeave, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        AreaOfEffect:
+          rid: 1452634394371555334
+        ApplyTrigger:
+          rid: 1452634394371555335
+        EndTrigger:
+          rid: 1452634394371555336
+        IsPermanent: 0
+    - rid: 1452634394371555334
+      type: {class: Single, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}
+    - rid: 1452634394371555335
+      type: {class: OnEquip, ns: TagFighter.Effects.Triggers, asm: Assembly-CSharp}
+      data:
+        WatchedItem: {fileID: 11400000}
+    - rid: 1452634394371555336
+      type: {class: OnUnequip, ns: TagFighter.Effects.Triggers, asm: Assembly-CSharp}
+      data:
+        WatchedItem: {fileID: 11400000}
+    - rid: 1452634394371555337
+      type: {class: AoeEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        Shape:
+          rid: 1452634394371555338
+    - rid: 1452634394371555338
+      type: {class: Single, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}
+    - rid: 2911539951715745793
+      type: {class: DelayedEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+    - rid: 2911539951715745794
+      type: {class: UnaryResourceEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        From:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 0
+        To:
+          Resource:
+            rid: 2911539951715745795
+          Location:
+            rid: 2911539951715745796
+          Multiplier: 1
+          Addend: 1
+    - rid: 2911539951715745795
+      type: {class: SwordKnowledge, ns: TagFighter.Effects.ResourceTypeAccessors,
+        asm: Assembly-CSharp}
+    - rid: 2911539951715745796
+      type: {class: Pawn, ns: TagFighter.Effects.ResourceLocationAccessors.Set, asm: Assembly-CSharp}
+      data:
+        Property:
+          rid: 2911539951715745797
+    - rid: 2911539951715745797
+      type: {class: Current, ns: TagFighter.Effects.ResourceLocationAccessors.PawnProperties,
+        asm: Assembly-CSharp}

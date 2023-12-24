@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b358771d7c78b49a59a0f15554adc1, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  _weapon:
+    Name: Shield
+    _effects:
+    - Slot:
+      - {fileID: 11400000, guid: 8dfd1e5469db1fb489923aeb1729b74a, type: 2}
+      Effect:
+        Mode:
+          rid: 6090675012705714188
+        Effect:
+          rid: 6090675012705714189
+    - Slot:
+      - {fileID: 11400000, guid: 8dfd1e5469db1fb489923aeb1729b74a, type: 2}
+      Effect:
+        Mode:
+          rid: 6090675012705714193
+        Effect:
+          rid: 6090675012705714197
+    _weaponMoveSet: {fileID: 11400000, guid: 65cfecf23c7ed0642b578b681fb07c20, type: 2}
+    _compatibleCombatForms:
+    - {fileID: 11400000, guid: 6d28336306dbd8f41b717755a0ee572c, type: 2}
+    - {fileID: 11400000, guid: 7cd9798399927f44ab0774af3f49897a, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6090675012705714188
+      type: {class: DelayedEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+    - rid: 6090675012705714189
+      type: {class: UnaryResourceEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        From:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 0
+        To:
+          Resource:
+            rid: 6090675012705714190
+          Location:
+            rid: 6090675012705714191
+          Multiplier: 1
+          Addend: 150
+    - rid: 6090675012705714190
+      type: {class: Range, ns: TagFighter.Effects.ResourceTypeAccessors, asm: Assembly-CSharp}
+    - rid: 6090675012705714191
+      type: {class: Pawn, ns: TagFighter.Effects.ResourceLocationAccessors.Set, asm: Assembly-CSharp}
+      data:
+        Property:
+          rid: 6090675012705714192
+    - rid: 6090675012705714192
+      type: {class: Current, ns: TagFighter.Effects.ResourceLocationAccessors.PawnProperties,
+        asm: Assembly-CSharp}
+    - rid: 6090675012705714193
+      type: {class: PeriodicWeave, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        AreaOfEffect:
+          rid: 6090675012705714194
+        ApplyTrigger:
+          rid: 6090675012705714195
+        EndTrigger:
+          rid: 6090675012705714196
+        IsPermanent: 0
+    - rid: 6090675012705714194
+      type: {class: Single, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}
+    - rid: 6090675012705714195
+      type: {class: OnEquip, ns: TagFighter.Effects.Triggers, asm: Assembly-CSharp}
+      data:
+        WatchedWeapon: {fileID: 11400000}
+    - rid: 6090675012705714196
+      type: {class: OnUnequip, ns: TagFighter.Effects.Triggers, asm: Assembly-CSharp}
+      data:
+        WatchedWeapon: {fileID: 11400000}
+    - rid: 6090675012705714197
+      type: {class: AoeEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        Shape:
+          rid: 6090675012705714198
+    - rid: 6090675012705714198
+      type: {class: Single, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}

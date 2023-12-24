@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4299eb7af6691f4a82ce6a25fd96981, type: 3}
+  m_Name: PulseQuad
+  m_EditorClassIdentifier: 
+  RuneSprite: {fileID: 21300000, guid: 0d46cad69341aca459223c81c1faa7c4, type: 3}
+  Rune:
+    DisplayName: PulseQuad
+    Speed: 1
+    ManaCost: 0
+    Effects:
+    - Mode:
+        rid: 1353921146486259726
+      Effect:
+        rid: 2536212716021350400
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1353921146486259726
+      type: {class: ImmediateEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        _areaOfEffect:
+          rid: 1353921146486259727
+    - rid: 1353921146486259727
+      type: {class: Path, ns: TagFighter.Effects.AoeShapes, asm: Assembly-CSharp}
+      data:
+        Width:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 2
+        Length:
+          Resource:
+            rid: -2
+          Location:
+            rid: -2
+          Multiplier: 1
+          Addend: 5
+    - rid: 2536212716021350400
+      type: {class: UnaryResourceEffect, ns: TagFighter.Effects, asm: Assembly-CSharp}
+      data:
+        From:
+          Resource:
+            rid: 2536212716021350407
+          Location:
+            rid: 2536212716021350408
+          Multiplier: 1
+          Addend: 0
+        To:
+          Resource:
+            rid: 2536212716021350418
+          Location:
+            rid: 2536212716021350404
+          Multiplier: 1
+          Addend: 10
+    - rid: 2536212716021350404
+      type: {class: Context, ns: TagFighter.Effects.ResourceLocationAccessors.Set,
+        asm: Assembly-CSharp}
+      data:
+        Register:
+          rid: 2536212716021350405
+        SetAs:
+          rid: 2536212716021350406
+    - rid: 2536212716021350405
+      type: {class: Added, ns: TagFighter.Effects.ResourceLocationAccessors.ContextRegisters,
+        asm: Assembly-CSharp}
+    - rid: 2536212716021350406
+      type: {class: Sum, ns: TagFighter.Effects.Operators, asm: Assembly-CSharp}
+    - rid: 2536212716021350407
+      type: {class: RedTag, ns: TagFighter.Effects.ResourceTypeAccessors, asm: Assembly-CSharp}
+    - rid: 2536212716021350408
+      type: {class: Context, ns: TagFighter.Effects.ResourceLocationAccessors.Get,
+        asm: Assembly-CSharp}
+      data:
+        Register:
+          rid: 2536212716021350409
+    - rid: 2536212716021350409
+      type: {class: Current, ns: TagFighter.Effects.ResourceLocationAccessors.ContextRegisters,
+        asm: Assembly-CSharp}
+    - rid: 2536212716021350418
+      type: {class: BlueTag, ns: TagFighter.Effects.ResourceTypeAccessors, asm: Assembly-CSharp}

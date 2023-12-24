@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d0b91f2af5b7f41a4f2d656c3ab3c4, type: 3}
+  m_Name: GreatSwordClipSet
+  m_EditorClassIdentifier: 
+  idle:
+  - {fileID: -203655887218126122, guid: ba942db276a46b94fbc0a6b96974fb26, type: 3}
+  - {fileID: -203655887218126122, guid: 4bbe65069c3b1c64182a932d852eeb9a, type: 3}
+  - {fileID: -203655887218126122, guid: 18dbdb86e2cebab4b9764773620071e1, type: 3}
+  - {fileID: -203655887218126122, guid: 64514a60671cdef429fe9f73aee5becd, type: 3}
+  - {fileID: -203655887218126122, guid: 445d3866cba7fe14f84c9baa06065120, type: 3}
+  run: {fileID: -203655887218126122, guid: 08961b84c904dc840baa1b8625486a2c, type: 3}
+  moveContainers:
+  - combatMove: {fileID: 11400000, guid: 58c5b630ea50af94c9793b9d5e497a52, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 6a941caedcd9a1d4ca0e3f1c213b79de,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: 249259461a8068c499eed99085edde54, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 65666cb3536e4104eb3fa24279641971,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: 6e88ca8055b9946448ca75ba8d9809c3, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 607982dd9a782134cb778aedcac4158c,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
+  - combatMove: {fileID: 11400000, guid: 29f070238f32e6c458467aec4297a66f, type: 2}
+    attackAnimation: {fileID: -203655887218126122, guid: 1bf55e603d8fc484899d18d8a280ef62,
+      type: 3}
+    runAnimationOverride: {fileID: 0}
